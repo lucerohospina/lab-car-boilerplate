@@ -11,7 +11,7 @@
     float: right;   
 }
 
-/* NAV */
+/* NAV WITH bg-image-1 */
 .bg-image-1 {
     background: url("../assets/images/taxi.jpg");
     background-repeat: no-repeat;
@@ -19,23 +19,10 @@
     background-size: 100%;
 }
 
-.bg-image-2 {
-    background-image: url("../assets/images/conduce.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100%; 
-}
-
 .right-yellow-box {
     background-color: #ffc107;
-    border: 2px solid red;
     color: #ffff;  
     padding: 15px 30px;
-   
-}
-
-.right-yellow-box button {
-    color: #000000;
 }
 
 .yellow-box-container {
@@ -48,6 +35,7 @@ section {
     background-color: #ffc107;
 }
 
+/* SECTION WITH IPHONE6 IMG */
 @media screen and (max-width: 767px){
 .cell-box {
     width: 80%;
@@ -66,6 +54,44 @@ section {
         border-right: 2px solid white;
         border-bottom: 2px solid white;
     }
+}
+
+/* NAV WITH bg-image-2 */
+@media screen and (max-width: 767px){
+    .bg-image-2 {
+        background-image: url("../assets/images/conduce.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 150% 100%; 
+    }
+    .rigth-opaque-box {
+        color: #ffff;  
+        padding: 60px 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-image-2 {
+       background-image: url("../assets/images/conduce.jpg");
+       background-repeat: no-repeat;
+       background-position: center center;
+       background-size: 100%; 
+    }
+ .rigth-opaque-box {
+    background-color: rgba(54, 25, 25, .4);
+    /* border: 2px solid red; */
+    color: #ffff;  
+    padding: 60px 30px;
+    }
+    .opaque-box-container {
+        padding-bottom: 25%;
+    }
+}
+
+.opaque-box-button {
+    background-color: #ffc107;
+    border: none;
+    color: #ffff;
 }
 
 
