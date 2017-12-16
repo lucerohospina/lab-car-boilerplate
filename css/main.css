@@ -1,37 +1,19 @@
 /* Mis estilos ;) */
 
 /* HEADER */
-
-
-
-.col-sm-4 {
-    border: 2px solid red;
+.navbar,
+.navbar-nav {
+    background-color: #ffff;
+    border: none;
 }
 
-header img {
-    margin-left: 15%;
+.navbar-nav {
+    float: right;   
 }
 
-.right-header {
-    margin-right: 0;
-}
-
-.right-header a {
-    margin: 12px;
-}
-
-
-
-
-
-
-
-section {
-    background-color: #ffc107;
-}
-
+/* NAV */
 .bg-image-1 {
-    background-image: url("../assets/images/taxi.jpg");
+    background: url("../assets/images/taxi.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
@@ -41,5 +23,49 @@ section {
     background-image: url("../assets/images/conduce.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 100%;
+    background-size: 100%; 
 }
+
+.right-yellow-box {
+    background-color: #ffc107;
+    border: 2px solid red;
+    color: #ffff;  
+    padding: 15px 30px;
+   
+}
+
+.right-yellow-box button {
+    color: #000000;
+}
+
+.yellow-box-container {
+    padding-bottom: 25%;
+    padding-top: 10%;
+}
+
+/* SECTION */
+section {
+    background-color: #ffc107;
+}
+
+@media screen and (max-width: 767px){
+.cell-box {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+ }
+}
+
+@media (min-width: 768px) {
+    .cell-box {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+}
+
+
