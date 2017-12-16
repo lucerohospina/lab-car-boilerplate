@@ -12,27 +12,27 @@
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                      <!-- Brand and toggle get grouped for better mobile display -->
-                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                          <span class="sr-only">Toggle navigation</span>
-                          <!-- rayitas del menu hamburguesa -->
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <img class="navbar-brand" src="assets/images/logoForma.png" alt="logo1">
-                      </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <!-- rayitas del menu hamburguesa -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <img class="navbar-brand" src="assets/images/logoForma.png" alt="logo1">
+                </div>
                   
-                      <!-- Collect the nav links, forms, and other content for toggling -->
-                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                          <li><a href="#">Viaja<span class="sr-only">(current)</span></a></li>
-                          <li><a href="#">Conduce</a></li>
-                          <li class="dropdown active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicia Sesión<span class="caret"></span></a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Viaja<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Conduce</a></li>
+                        <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicia Sesión<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                               <li><a href="#">Action</a></li>
                               <li><a href="#">Another action</a></li>
@@ -42,16 +42,27 @@
                               <li role="separator" class="divider"></li>
                               <li><a href="#">One more separated link</a></li>
                             </ul>
-                          </li>
-                        </ul>
-                      </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                  </nav>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
     </header>
     <nav class="container-fluid ">
         <!--background image-->
         <div class="row bg-image-1 yellow-box-container">
-            <div class="col-xs-9 col-xs-offset-3 col-sm-5 col-sm-offset-7 right-yellow-box">
+            <!--Vista Mobile-->
+            <div class="right-yellow-box col-xs-10 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
+                    <div>
+                        <h4>Comienza a viajar</h4>
+                        <h4>con LabCar</h4>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-default btn-xs">Descarga el app</button>
+                    </div>
+                </div>
+            <!--Vista No Mobile-->
+            <div class="right-yellow-box col-sm-5 col-sm-offset-7 visible-sm visible-md visible-lg">
                 <div>
                     <h2>Disfruta del viaje</h2>
                     <h2>Eres dueño de tu tiempo</h2>
@@ -122,18 +133,20 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div>
-                    <img src="assets/images/logoBlanco.png" alt="white-logo">
+                <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+                    <img class="footer-logo" src="assets/images/logoBlanco.png" alt="white-logo">
                 </div>
-                <hr>
-                <div class="col-sm-2 col-sm-offset-1">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <i class="fa fa-apple" aria-hidden="true"></i>
-                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </div>
+            <hr class="hr">
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-1 visible-sm visible-md visible-lg social">
+                    <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-apple" aria-hidden="true"></a>
+                    <a href="#" class="fa fa-caret-right" aria-hidden="true"></a>
                 </div>
-                <div class="list-group col-sm-3">
+                <div class="list-group col-xs-6 col-sm-3">
                         <a href="#" class="list-group-item">Viaja</a>
                         <a href="#" class="list-group-item">Conduce</a>
                         <a href="#" class="list-group-item">Ciudades</a>
@@ -143,7 +156,7 @@
                         <a href="#" class="list-group-item">Países</a>
                         <a href="#" class="list-group-item">Seguridad</a>
                 </div>
-                <div class="list-group col-sm-3">
+                <div class="list-group col-sm-3 visible-sm visible-md visible-lg">
                         <a href="#" class="list-group-item">Oportunidades</a>
                         <a href="#" class="list-group-item">Nuestra historia</a>
                         <a href="#" class="list-group-item">API de LabCar</a>
@@ -153,17 +166,23 @@
                         <a href="#" class="list-group-item">Laboratoria</a>
                         <a href="#" class="list-group-item">Coders</a>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-xs-6 col-sm-2">
+                    <div class="hidden-sm hidden-md hidden-lg social">
+                        <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-apple" aria-hidden="true"></a>
+                        <a href="#" class="fa fa-caret-right" aria-hidden="true"></a>
+                    </div>
                     <img src="assets/images/appstore.png" alt="app-store">
                     <img src="assets/images/enBadgeWebGeneric.png" alt="google-play">
                 </div>
-                <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores, voluptates nobis, mollitia impedit quaerat non corporis repudiandae ratione minus repellat tempore! Voluptate vero explicabo dicta odio quaerat rerum, adipisci magnam, inventore cupiditate nesciunt blanditiis quis eius, dolores maxime. Ullam itaque perferendis iste animi, accusamus nostrum. Consectetur ipsam nulla similique quod fugiat quam nihil, totam incidunt molestiae, dolore autem delectus temporibus ex sint deserunt labore natus at eos quo nam! Alias placeat hic, voluptatum quisquam reiciendis in sint consequatur molestias quod iure doloremque, explicabo, dolor nisi totam earum. Voluptas minus eveniet nobis totam laboriosam quas optio dicta ipsum eligendi esse.</p>
-                    </div>
-                </div>
             </div>
+            <hr class="hr">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>© 2017 LabCar technologies Inc. </p>
+                </div>
             </div>
         </div>
     </footer>
