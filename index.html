@@ -51,7 +51,7 @@
     <nav class="container-fluid">
         <!--background image-->
         <div class="row bg-image-1 yellow-box-container">
-            <!--Vista Mobile-->
+            <!--Mobile View-->
             <div class="right-yellow-box col-xs-10 col-xs-offset-2 hidden-sm hidden-md hidden-lg">
                     <div class="yellow-box-title">
                         <h4>Comienza a viajar</h4>
@@ -61,7 +61,7 @@
                         <button type="button" class="btn btn-default yellow-box-button">Descarga el app</button>
                     </div>
                 </div>
-            <!--Vista No Mobile-->
+            <!--No Mobile View-->
             <div class="right-yellow-box col-sm-7 col-sm-offset-5 col-md-6 col-md-offset-6 col-lg-5 col-lg-offset-7 visible-sm visible-md visible-lg">
                 <div class="yellow-box-title">
                     <h2>Disfruta del viaje <br> Eres dueño de tu tiempo</h2>
@@ -83,23 +83,36 @@
     </nav>
     <section class="container-fluid">
         <div class="row cell-box">
-            <div class="col-xs-12 col-sm-5">
+            <!--Mobile View-->
+            <div class="hidden-sm hidden-md hidden-lg">
+                <h4 class="upper-h">La nueva app</h4>
+            </div>
+            <!--end view-->
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
                 <img class="img-responsive" src="assets/images/iPhone6Plus.png" alt="iphone6plus">
             </div>
-            <div class="col-sm-3 visible-sm visible-md visible-lg">
+            <!--No Mobile View-->
+            <div class="col-sm-6 col col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1 visible-sm visible-md visible-lg right-text-content">
                 <h3>Decarga la nueva app</h3>
                 <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido</p>
+                <br>
                 <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir</p>
+            </div>
+        </div>
+        <!--Mobile View-->
+        <div class="row hidden-sm hidden-md hidden-lg">
+            <div class="col-xs-12">
+                <p class="bottom-p">Llega a tu destino aún más rápido</p>
             </div>
         </div>
     </section>
     <nav class="container-fluid">
         <!--background image-->
         <div class="row bg-image-2 opaque-box-container">
-            <div class="col-xs-9 col-xs-offset-3 col-sm-5 col-sm-offset-7 rigth-opaque-box">
+            <div class="col-xs-12 col-sm-5 col-sm-offset-7 rigth-opaque-box">
                 <h3>Conduce cuando quieras</h3>
                 <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
-                <button type="button" class="btn btn-default opaque-box-button">Conviértete en conductor</button>
+                <button type="button" class="btn btn-default btn-sm opaque-box-button">Conviértete en conductor</button>
             </div>
         </div>
                    

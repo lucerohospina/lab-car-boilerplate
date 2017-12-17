@@ -60,7 +60,7 @@ body {
         padding-bottom: 25%;
         padding-top: 10%;
     }
-    h2, h3, p {
+    .right-yellow-box h2, h3, p {
         font-weight: 700;
     }
     .yellow-box-image{
@@ -90,22 +90,49 @@ section {
 
 /* SECTION WITH IPHONE6 IMG */
 @media screen and (max-width: 767px){
-.cell-box {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px solid white;
- }
+    .cell-box {
+        border: 1px solid white;
+        margin: 10% 0.5%;
+    }
+    .upper-h {
+        color: #fff;
+        font-size: 1.5em;
+        padding-top: 10%;
+        margin-bottom: -5%;
+        text-align: center;
+    }
+    .bottom-p {
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .cell-box img {
+        padding: 10%;
+        width: 90%;
+    }
 }
 
 @media (min-width: 768px) {
     .cell-box {
-        width: 80%;
+        color: #fff;
+        width: 75%;
         margin-top: 20px;
         margin-bottom: 20px;
         border-top: 2px solid white;
         border-right: 2px solid white;
         border-bottom: 2px solid white;
+    }
+    .right-text-content {
+        padding: 2%;
+        margin-top: 2%;
+        line-height: 1.8em;
+    }
+    .right-text-content p {
+        font-size: 1.15em;
+        font-weight: 600;
+    }
+    .cell-box img {
+        padding: 10%;
     }
 }
 
@@ -116,10 +143,23 @@ section {
         background-repeat: no-repeat;
         background-position: center top;
         background-size: 150% 100%; 
+        
     }
     .rigth-opaque-box {
-        color: #ffff;  
-        padding: 60px 30px;
+        background-color: rgba(54, 25, 25, .4);
+        color: #ffff;
+        padding-top: 10%;
+    }
+    .rigth-opaque-box h3 {
+        font-size: 1em;
+        font-weight: 700;
+    }
+    .rigth-opaque-box p {
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    .opaque-box-container {
+        padding-bottom: 25%;
     }
 }
 
@@ -132,7 +172,6 @@ section {
     }
  .rigth-opaque-box {
     background-color: rgba(54, 25, 25, .4);
-    /* border: 2px solid red; */
     color: #ffff;  
     padding: 60px 30px;
     }
@@ -145,6 +184,7 @@ section {
     background-color: #ffc107;
     border: none;
     color: #ffff;
+    font-weight: 600;
 }
 
 /* SECTION WITH MAP */
