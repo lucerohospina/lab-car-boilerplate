@@ -19,45 +19,69 @@ body {
     .bg-image-1 {
         background-image: url("../assets/images/taxi.jpg");
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%; 
+        background-position: center bottom;
+        background-size: 100%;
     }
     .right-yellow-box {
         background-color: #ffc107;
         color: #ffff;
-        padding: 5px;
-        /* padding: auto 30px; */
+        padding: 5%;
     }
     .yellow-box-container {
-        padding: 50px;
-        /* padding-top: 50%; */
-        border: 5px solid red;
+        padding-bottom: 30%;
+        padding-top: 50%;
+    }
+    .yellow-box-title {
+        margin-bottom: 12%;
+    }
+    .yellow-box-image{
+        margin-left: 3%;
+        width: 20%;
+    }
+    h4 {
+        font-size: 1.8em;
+        font-weight: 700;
     }
 }
 
 @media (min-width: 768px) {
-.bg-image-1 {
-    background: url("../assets/images/taxi.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 100%;
+    .bg-image-1 {
+        background: url("../assets/images/taxi.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100%;
+    }
+    .right-yellow-box {
+        background-color: #ffc107;
+        color: #ffff;  
+        padding: 15px 30px;
+    }
+    .yellow-box-container {
+        padding-bottom: 25%;
+        padding-top: 10%;
+    }
+    h2, h3, p {
+        font-weight: 700;
+    }
+    .yellow-box-image{
+        margin-left: 3%;
+        width: 20%;
+    }
+    .yellow-box-button {
+        margin: 10px;
+    }
 }
 
-.right-yellow-box {
-    background-color: #ffc107;
-    color: #ffff;  
-    padding: 15px 30px;
+.yellow-box-button {
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 5px 10px;
 }
-.yellow-box-container {
-    padding-bottom: 25%;
-    padding-top: 10%;
-}
+hr {
+    display: inline-block;
+    width: 10%;
 }
 
-.yellow-box-container {
-    padding-bottom: 25%;
-    padding-top: 10%;
-}
 
 /* SECTION */
 section {
