@@ -370,6 +370,7 @@ a.list-group-item:hover {
 }
 
 /* MODALS */
+
 /* Log in MODAL */
 .loginmodal-container {
     padding: 30px;
@@ -393,6 +394,7 @@ a.list-group-item:hover {
 
   .login-input {
       background-color: #fff;
+      color: #2b2b2b;
   }
 
   .btn-group {
@@ -423,19 +425,12 @@ a.list-group-item:hover {
     font-size: 1em;
   }
 
-  .fa-user,
-  .fa-lock {
-      color: #2b2b2b;
-  }
-
   .close {
       color: #2b2b2b;
       font-size: 3em;
   }
 
   /* Registration Modal */
-  
-/* Driver Modal */
 .regmodal-container { 
     max-width: 360px; 
     padding: 30px;
@@ -455,6 +450,7 @@ a.list-group-item:hover {
     border: none;
     color: #fff;
     display: block;
+    font-weight: 700;
     width: 100%;
 }
 
@@ -471,3 +467,14 @@ a.list-group-item:hover {
     display: inline-block;
     width: 45%;
 }
+
+.reg-drop-button {
+    font-weight: 700;
+}
+
+#signupSubmit {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Driver Modal */
